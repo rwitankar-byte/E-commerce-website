@@ -1,0 +1,173 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f6fff8;
+  color: #033d1d;
+}
+
+/* Navbar */
+.navbar {
+  background: #004d26;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000;
+  transition: top 0.3s; /* Smooth transition for hiding */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover, .navbar a.active {
+  text-decoration: underline;
+}
+
+/* Hero Section with Ripple Animation */
+.header {
+  position: relative;
+  height: 90vh;
+  padding-top: 100px; /* so the hero content starts below navbar */
+  background: linear-gradient(180deg, rgba(0,128,64,0.8), rgba(0,64,32,0.7)),
+              url('photos/hero-bg.jpeg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.15) 20%, transparent 20%);
+  animation: ripple 10s infinite linear;
+}
+
+/* Hero Content */
+.hero {
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #00b36b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #007a4a;
+}
+
+.btn.secondary {
+  background: #1e8a4e;
+}
+
+footer {
+  background: #004d26;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 20px; /* Add padding for spacing */
+  text-align: center;
+  background-color: #e0f7e0; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px; /* Margin for spacing */
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Product Page */
+.product-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.product-img {
+  width: 220px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Contact Form */
+.contact-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  margin: auto;
+}
+
+.contact-section input, .contact-section textarea {
+  padding: 10px;
+  border: 2px solid #00b36b;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Fade-In Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

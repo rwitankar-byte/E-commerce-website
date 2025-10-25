@@ -42,7 +42,7 @@ body {
 .header {
   position: relative;
   height: 90vh;
-  padding-top: 100px; /* so the hero content starts below navbar */
+  padding-top: 100px; 
   background: linear-gradient(180deg, rgba(0,128,64,0.8), rgba(0,64,32,0.7)),
               url('photos/hero-bg.jpeg') center/cover no-repeat;
   display: flex;

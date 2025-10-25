@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   color: #033d1d;
 }
 
-/* Navbar */
+
 .navbar {
   background: #004d26;
   color: white;
@@ -19,7 +19,7 @@ body {
   left: 0;
   width: 100%; /* Full width */
   z-index: 1000;
-  transition: top 0.3s; /* Smooth transition for hiding */
+  transition: top 0.3s; 
 }
 
 .navbar ul {
@@ -38,7 +38,7 @@ body {
   text-decoration: underline;
 }
 
-/* Hero Section with Ripple Animation */
+
 .header {
   position: relative;
   height: 90vh;
@@ -61,7 +61,7 @@ body {
   animation: ripple 10s infinite linear;
 }
 
-/* Hero Content */
+
 .hero {
   text-align: center;
   z-index: 1;
@@ -102,13 +102,13 @@ footer {
   margin-top: 40px;
 }
 
-/* About Section */
+
 .about-section {
-  padding: 80px 20px; /* Add padding for spacing */
+  padding: 80px 20px; 
   text-align: center;
-  background-color: #e0f7e0; /* Light background for contrast */
-  border-radius: 8px; /* Rounded corners */
-  margin: 20px; /* Margin for spacing */
+  background-color: #e0f7e0;
+  border-radius: 8px; 
+  margin: 20px; 
 }
 
 .about-section h2 {
@@ -117,11 +117,11 @@ footer {
 }
 
 .about-section p {
-  font-size: 1.1rem;
-  line-height: 1.6; /* Improved readability */
+  font-size: 1.2rem;
+  line-height: 1.6; 
 }
 
-/* Product Page */
+
 .product-section {
   text-align: center;
   padding: 50px 20px;
@@ -139,7 +139,7 @@ footer {
   gap: 20px;
 }
 
-/* Contact Form */
+
 .contact-section {
   text-align: center;
   padding: 50px;
@@ -160,7 +160,7 @@ footer {
   font-size: 1rem;
 }
 
-/* Fade-In Animations */
+
 .hidden {
   opacity: 0;
   transform: translateY(30px);

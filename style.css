@@ -8,20 +8,23 @@ body {
 
 
 .navbar {
+  position: relative;
   background: #004d26;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%; /* Full width */
   z-index: 1000;
   transition: top 0.3s; 
 }
-
+.items{
+  font-size: 20px;
+  position: absolute;
+  right:5%;
+}
 .navbar ul {
   list-style: none;
   display: flex;
@@ -122,12 +125,14 @@ footer {
 }
 
 
-.product-section {
+#product-section {
   text-align: center;
   padding: 50px 20px;
+
 }
 
 .product-img {
+
   width: 220px;
   border-radius: 12px;
   margin: 20px 0;
@@ -160,9 +165,12 @@ footer {
   font-size: 1rem;
 }
 
+body{
+  position: relative;
+}
+.product-section{
 
-.hidden {
-  opacity: 0;
+  position: absolute;
   transform: translateY(30px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
@@ -170,4 +178,11 @@ footer {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+.foot{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

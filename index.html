@@ -7,17 +7,27 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+
   <nav class="navbar">
     <h1 class="logo">TOP-R AQUA</h1>
-    <ul class = 'items'>
+
+    <!-- Hidden checkbox (controls the menu) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Label acts as the hamburger button -->
+    <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu" aria-controls="nav-menu">
+      &#9776;
+    </label>
+
+    <ul class="items" id="nav-menu">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="product.html">Product</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <header class="header">  
+
+  <header class="header">
     <div class="hero hidden">
       <h2>Pure • Safe • Reliable</h2>
       <p>Delivering clean and refreshing water to your doorstep.</p>
@@ -30,10 +40,29 @@
     <p>Because your family deserves nothing less than purity, trust, and care — every single drop.</p>
   </section>
 
-  <footer class = 'foot'>
+  <section class="why-choose" aria-labelledby="why-choose-heading">
+    <div class="why-choose-box">
+      <h2>Why Choose <span class="highlight">TOP-R AQUA?</span></h2>
+      <p class="subtitle">Pure, safe, and refreshing water — delivered right to your doorstep.</p>
+
+      <div class="features">
+        <ul>
+          <li>✅ In-house RO purification for consistently safe water</li>
+          <li>✅ Reliable door-to-door delivery — on time, every time</li>
+        </ul>
+        <ul>
+          <li>✅ Sealed, tamper-proof 20 L jars for hygiene and freshness</li>
+          <li>✅ Locally owned — personal service and community focus</li>
+        </ul>
+      </div>
+
+      <a href="contact.html" class="order-btn">Order Now — Get Fresh Water</a>
+    </div>
+  </section>
+
+  <footer class="foot">
     <p>© 2025 TOP-R AQUA | All Rights Reserved</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

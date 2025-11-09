@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | TOP-R AQUA</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <nav class="navbar">
     <h1 class="logo">TOP-R AQUA</h1>
-    <ul class = 'items'>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+
+    <!-- Hidden checkbox to toggle menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Label acts as hamburger icon -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="items">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="product.html">Product</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -33,10 +41,19 @@
     </p>
   </section>
 
-  <footer class = 'foot'>
+  <div class="tagline-banner" aria-label="Top benefits">
+    <div class="tagline-banner__inner">
+      <div class="tagline-banner__left">
+        <strong>Pure water. Delivered on time.</strong>
+        <span class="muted">Sealed 20 L jars • Home RO purification • City-wide delivery</span>
+      </div>
+      <a class="tagline-banner__btn" href="contact.html">Order Now</a>
+    </div>
+  </div>
+
+  <footer class="foot">
     <p>© 2025 TOP-R AQUA | All Rights Reserved</p>
   </footer>
-
 
 </body>
 </html>

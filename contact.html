@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | TOP-R AQUA</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <nav class="navbar">
     <h1 class="logo">TOP-R AQUA</h1>
-    <ul class = 'items'>
-      <li><a href="index.html">Home</a></li>
+
+    <!-- Hidden checkbox to toggle menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Label acts as hamburger icon -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="items">
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="product.html">Product</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <section class="contact-section">
     <h2>Contact Us</h2>
     <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="text" placeholder="Address" required>
-      <input type="number" placeholder="Phone Number" required>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Address" required />
+      <input type="number" placeholder="Phone Number" required />
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit" class="btn">Send</button>
     </form>
   </section>
 
-  <footer class = 'foot'>
+  <footer class="foot">
     <p>© 2025 TOP-R AQUA | All Rights Reserved</p>
   </footer>
 
